@@ -3,9 +3,10 @@ const input = '51629928149116951271942527619459642429126871269715586365184693792
 const inputArr = input.split('').map((value) => parseInt(value));
 
 let total = 0;
+const distance = Math.floor(inputArr.length / 2);
 
 inputArr.forEach((value, index, array) => {
-    if(value === array[index + 1] || (index === (array.length - 1) && value === array[0])) {
+    if(value === array[(index + distance) % array.length]) {
         total += value;
     }
 })
