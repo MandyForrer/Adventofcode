@@ -21,7 +21,21 @@ const output1 = rows
     .map(row => Math.max(...row) - Math.min(...row))
     .reduce((total, value) => total + value);
  
+const output2 = rows
+    .map(row => {
+        let division = 0;
 
+        row.forEach((item) => {
+            row.forEach((comparingItem) => {
+                if ((item % comparingItem) === 0 && item !== comparingItem) {
+                    division = item / comparingItem;
+                }
+            });
+        });
 
+        return division;
+    })
+    .reduce((total, value) => total + value);
 
-    console.log('rows', output1);
+    console.log('A1: ', output1);
+    console.log('A2: ', output2);
