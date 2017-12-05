@@ -4,7 +4,8 @@
   "description": "Advent of Code 2017",
   "main": "index.js",
   "scripts": {
-    "01":"node src/01/index.js"
+    "01":"node src/01/index.js",
+    "02":"node src/02/index.js"
   },
   "repository": {
     "type": "git",
