@@ -1,0 +1,19 @@
+{
+  "name": "adventofcode",
+  "version": "1.0.0",
+  "description": "Advent of Code 2017",
+  "main": "index.js",
+  "scripts": {
+    "01":"node src/01/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MandyForrer/Adventofcode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MandyForrer/Adventofcode/issues"
+  },
+  "homepage": "https://github.com/MandyForrer/Adventofcode#readme"
+}
